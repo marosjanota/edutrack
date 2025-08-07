@@ -7,7 +7,7 @@ import type { Assignment } from '../../types';
 
 export const TeacherDashboard: React.FC = () => {
   const { user } = useAuth();
-  const { getSubjectsByTeacher, assignments, submissions, students, addAssignment } = useData();
+  const { getSubjectsByTeacher, assignments, submissions, students, addAssignment, subjects } = useData();
   const [showQuickAddModal, setShowQuickAddModal] = useState(false);
   const [selectedSubjectId, setSelectedSubjectId] = useState<string>('');
   const [newAssignment, setNewAssignment] = useState({

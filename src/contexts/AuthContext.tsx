@@ -30,9 +30,9 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
   const login = async (email: string, password: string) => {
     const mockUsers: User[] = [
-      { id: '1', name: 'Admin User', email: 'admin@edutrack.sk', role: 'admin' },
-      { id: '2', name: 'Peter Novák', email: 'teacher@edutrack.sk', role: 'teacher' },
-      { id: '3', name: 'Mária Kováčová', email: 'student@edutrack.sk', role: 'student' },
+      { id: 'admin1', name: 'Admin User', email: 'admin@edutrack.sk', role: 'admin' },
+      { id: 'teacher1', name: 'Peter Novák', email: 'teacher@edutrack.sk', role: 'teacher' },
+      { id: 'student1', name: 'Mária Kováčová', email: 'student@edutrack.sk', role: 'student' },
     ];
 
     const foundUser = mockUsers.find(u => u.email === email);
